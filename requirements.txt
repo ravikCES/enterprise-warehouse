@@ -1,0 +1,32 @@
+# 
+# Author      : Ravi Karra
+# Date        : 2026-02-19
+# Project     : Warehouse Order Status Automation (End-to-End)
+# 
+
+# --- CORE LOGIC & CONCURRENCY ---
+# Handles high-speed parallel robotic tasking for 100K+ items.
+asyncio==3.4.3
+
+# --- GCP CLOUD FUNCTIONS (ALERTS) ---
+# functions-framework: The server environment for main.py.
+# firebase-admin: Sends high-priority FCM push notifications to manager mobile devices.
+functions-framework==3.*
+firebase-admin==6.2.0
+
+# --- DATA STORAGE & DIGITAL TWIN ---
+# Manages real-time item tracking and "Rework Lane" entries in Firestore.
+google-cloud-firestore==2.11.1
+
+# --- HIGH-THROUGHPUT ANALYTICS (STORAGE WRITE API) ---
+# google-cloud-bigquery: Standard data operations for the Analytics Engine.
+# google-cloud-bigquery-storage: High-velocity streaming for thousands of events/sec.
+# protobuf: Efficient binary serialization for robotic telemetry.
+google-cloud-bigquery==3.11.3
+google-cloud-bigquery-storage==2.14.1
+protobuf==4.23.4
+
+# --- MONITORING & VISUALIZATION ---
+# Optional: Used for building the real-time Manager Dashboard UI.
+streamlit==1.25.0
+pandas==2.0.3

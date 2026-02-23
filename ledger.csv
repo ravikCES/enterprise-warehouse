@@ -1,0 +1,3 @@
+timestamp,sku,location,rack_contents_snapshot
+2026-02-20T17:25:00,SKU-05J8TYG5,warehouse-racks:A1,A1: ['SKU-05J8TYG5']
+2026-02-20T17:25:21,SKU-05J8TYG5,packing-station,A1: []
